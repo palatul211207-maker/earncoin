@@ -1,0 +1,2 @@
+# earncoin
+Earning PWA App
