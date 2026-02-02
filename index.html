@@ -1,1 +1,42 @@
-index.html added
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>EarnCoin App</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0aad4f">
+
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<h2>💰 EarnCoin App</h2>
+
+<div class="box">
+  <p>Total Coins:</p>
+  <h1 id="coin">0</h1>
+</div>
+
+<!-- 🔼 DISPLAY AD 1 -->
+<div class="ad">Your Display Ad Here</div>
+
+<button onclick="watchAd()">🎥 Watch Ad & Earn 10 Coins</button>
+
+<!-- 🔽 DISPLAY AD 2 -->
+<div class="ad">Your Display Ad Here</div>
+
+<p class="note">Daily limit: 20 ads</p>
+
+<script src="app.js"></script>
+
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("service-worker.js");
+}
+</script>
+
+</body>
+</html>
